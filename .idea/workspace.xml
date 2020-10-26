@@ -13,8 +13,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89c91444-8f54-41b5-b983-65c8c54ecd4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/kv.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cli/cli.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/rkv.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/rkv.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +84,7 @@
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,7 +94,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603696373159</updated>
-      <workItem from="1603696374997" duration="5463000" />
+      <workItem from="1603696374997" duration="6648000" />
+      <workItem from="1603705782268" duration="4610000" />
     </task>
     <servers />
   </component>
@@ -100,22 +107,26 @@
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="1041" y="539" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3072.1688@0.0.3072.1688" timestamp="1603701070624" />
-    <state width="1362" height="343" key="GridCell.Tab.0.bottom" timestamp="1603701072551">
+    <state x="1475" y="419" key="CommitChangelistDialog2" timestamp="1603710421393">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state width="1362" height="343" key="GridCell.Tab.0.bottom/0.0.3072.1688@0.0.3072.1688" timestamp="1603701072551" />
-    <state width="1362" height="343" key="GridCell.Tab.0.center" timestamp="1603701072551">
+    <state x="1475" y="419" key="CommitChangelistDialog2/0.0.3072.1688@0.0.3072.1688" timestamp="1603710421393" />
+    <state width="1676" height="675" key="GridCell.Tab.0.bottom" timestamp="1603710396098">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state width="1362" height="343" key="GridCell.Tab.0.center/0.0.3072.1688@0.0.3072.1688" timestamp="1603701072551" />
-    <state width="1362" height="343" key="GridCell.Tab.0.left" timestamp="1603701072551">
+    <state width="1676" height="675" key="GridCell.Tab.0.bottom/0.0.3072.1688@0.0.3072.1688" timestamp="1603710396098" />
+    <state width="1676" height="675" key="GridCell.Tab.0.center" timestamp="1603710396098">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state width="1362" height="343" key="GridCell.Tab.0.left/0.0.3072.1688@0.0.3072.1688" timestamp="1603701072551" />
-    <state width="1362" height="343" key="GridCell.Tab.0.right" timestamp="1603701072551">
+    <state width="1676" height="675" key="GridCell.Tab.0.center/0.0.3072.1688@0.0.3072.1688" timestamp="1603710396098" />
+    <state width="1676" height="675" key="GridCell.Tab.0.left" timestamp="1603710396098">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state width="1362" height="343" key="GridCell.Tab.0.right/0.0.3072.1688@0.0.3072.1688" timestamp="1603701072551" />
+    <state width="1676" height="675" key="GridCell.Tab.0.left/0.0.3072.1688@0.0.3072.1688" timestamp="1603710396098" />
+    <state width="1676" height="675" key="GridCell.Tab.0.right" timestamp="1603710396098">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="1676" height="675" key="GridCell.Tab.0.right/0.0.3072.1688@0.0.3072.1688" timestamp="1603710396098" />
     <state x="1101" y="489" key="SettingsEditor" timestamp="1603698570654">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
