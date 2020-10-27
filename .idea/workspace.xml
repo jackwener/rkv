@@ -13,12 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89c91444-8f54-41b5-b983-65c8c54ecd4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cli/cli.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bin/rkv.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/rkv.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,22 +90,36 @@
       <option name="presentableId" value="Default" />
       <updated>1603696373159</updated>
       <workItem from="1603696374997" duration="6648000" />
-      <workItem from="1603705782268" duration="4610000" />
+      <workItem from="1603705782268" duration="5953000" />
+      <workItem from="1603786359229" duration="20000" />
+      <workItem from="1603786579321" duration="2283000" />
     </task>
+    <task id="LOCAL-00001" summary="add clap 3.0.0-beta.2 code">
+      <created>1603710462651</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603710462651</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add clap 3.0.0-beta.2 code" />
+    <option name="LAST_COMMIT_MESSAGE" value="add clap 3.0.0-beta.2 code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1041" y="539" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603701070624">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="1041" y="539" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3072.1688@0.0.3072.1688" timestamp="1603701070624" />
-    <state x="1475" y="419" key="CommitChangelistDialog2" timestamp="1603710421393">
+    <state x="1475" y="419" key="CommitChangelistDialog2" timestamp="1603710461872">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="1475" y="419" key="CommitChangelistDialog2/0.0.3072.1688@0.0.3072.1688" timestamp="1603710421393" />
+    <state x="1475" y="419" key="CommitChangelistDialog2/0.0.3072.1688@0.0.3072.1688" timestamp="1603710461872" />
     <state width="1676" height="675" key="GridCell.Tab.0.bottom" timestamp="1603710396098">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
@@ -131,5 +140,9 @@
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="1101" y="489" key="SettingsEditor/0.0.3072.1688@0.0.3072.1688" timestamp="1603698570654" />
+    <state x="1511" y="575" key="Vcs.Push.Dialog.v2" timestamp="1603710466343">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="1511" y="575" key="Vcs.Push.Dialog.v2/0.0.3072.1688@0.0.3072.1688" timestamp="1603710466343" />
   </component>
 </project>

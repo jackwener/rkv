@@ -1,7 +1,9 @@
 use clap::{App, Arg};
 use std::process::exit;
+use rkv::kv::KV;
 
 fn main() {
+    // [env variables doc](https://doc.rust-lang.org/cargo/reference/environment-variables.html)
     let matches = App::new(env!("CARGO_PKG_NAME"))
         .version(env!("CARGO_PKG_VERSION"))
         .author(env!("CARGO_PKG_AUTHORS"))
@@ -31,8 +33,10 @@ fn main() {
 
     match matches.subcommand() {
         Some(("set", _sub_m)) => {
-            eprintln!("unimplemented");
-            exit(1);
+            let key = matches.value_of("KEY").expect("KEY argument missing");
+            let value = matches.value_of("VALUE").expect("VALUE argument missing");
+
+
         }
         Some(("get", _sub_m)) => {
             eprintln!("unimplemented");
