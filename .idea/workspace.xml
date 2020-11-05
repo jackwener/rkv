@@ -13,8 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89c91444-8f54-41b5-b983-65c8c54ecd4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/log_kv.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/rkv.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/rkv.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kv.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/kv.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +73,6 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -92,7 +89,12 @@
       <workItem from="1603696374997" duration="6648000" />
       <workItem from="1603705782268" duration="5953000" />
       <workItem from="1603786359229" duration="20000" />
-      <workItem from="1603786579321" duration="2283000" />
+      <workItem from="1603786579321" duration="2954000" />
+      <workItem from="1603859006455" duration="1023000" />
+      <workItem from="1603872420752" duration="1459000" />
+      <workItem from="1604043653962" duration="1009000" />
+      <workItem from="1604468126874" duration="2607000" />
+      <workItem from="1604578417615" duration="1746000" />
     </task>
     <task id="LOCAL-00001" summary="add clap 3.0.0-beta.2 code">
       <created>1603710462651</created>

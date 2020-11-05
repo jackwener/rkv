@@ -1,25 +1,25 @@
 use std::collections::HashMap;
 
-pub struct KV {
-    map: HashMap<String, String>
+use std::path::PathBuf;
+
+enum Command {
+    Set {key: String, value: String},
+    Remove {key: String},
 }
 
-impl KV {
-    pub fn new() -> KV {
-        KV {
-            map: HashMap::new()
-        }
+impl Command {
+    fn set(key: String, value: String) -> Command {
+        Command::Set { key, value }
     }
 
-    pub fn get(&mut self, key: String) -> Option<&String> {
-        self.map.get(&key)
+    fn remove(key: String) -> Command {
+        Command::Remove { key }
     }
+}
 
-    pub fn set(&mut self, key: String, value: String) -> Option<String> {
-        self.map.insert(key, value)
-    }
-
-    pub fn remove(&mut self, key: String) -> Option<String> {
-        self.map.remove(&key)
-    }
+pub struct KvStore {
+    path: PathBuf,
+    mem_table: HashMap<String, usize>,
+    cur: usize,
+    threshold: usize,
 }
