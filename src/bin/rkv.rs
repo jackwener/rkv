@@ -1,51 +1,67 @@
-use clap::{App, Arg};
+use clap::{App, AppSettings, Arg, SubCommand};
+use std::env;
 use std::process::exit;
-use rkv::kv::KV;
+use rkv::{KvStore, Result};
 
-fn main() {
-    // [env variables doc](https://doc.rust-lang.org/cargo/reference/environment-variables.html)
+fn main() -> Result<()> {
     let matches = App::new(env!("CARGO_PKG_NAME"))
         .version(env!("CARGO_PKG_VERSION"))
         .author(env!("CARGO_PKG_AUTHORS"))
         .about(env!("CARGO_PKG_DESCRIPTION"))
+        .setting(AppSettings::DisableHelpSubcommand)
+        .setting(AppSettings::SubcommandRequiredElseHelp)
+        .setting(AppSettings::VersionlessSubcommands)
         .subcommand(
-            App::new("set")
+            SubCommand::with_name("set")
                 .about("Set the value of a string key to a string")
-                .arg(Arg::new("KEY").about("A string key").required(true))
+                .arg(Arg::with_name("KEY").help("A string key").required(true))
                 .arg(
-                    Arg::new("VALUE")
-                        .about("The string value of the key")
+                    Arg::with_name("VALUE")
+                        .help("The string value of the key")
                         .required(true),
                 ),
         )
         .subcommand(
-            App::new("get")
+            SubCommand::with_name("get")
                 .about("Get the string value of a given string key")
-                .arg(Arg::new("KEY").about("A string key").required(true)),
+                .arg(Arg::with_name("KEY").help("A string key").required(true)),
         )
         .subcommand(
-            App::new("rm")
+            SubCommand::with_name("rm")
                 .about("Remove a given key")
-                .arg(Arg::new("KEY").about("A string key").required(true)),
+                .arg(Arg::with_name("KEY").help("A string key").required(true)),
         )
         .get_matches();
 
+    let mut kvs = KvStore::open(env::current_dir()?)?;
 
     match matches.subcommand() {
-        Some(("set", _sub_m)) => {
-            let key = matches.value_of("KEY").expect("KEY argument missing");
-            let value = matches.value_of("VALUE").expect("VALUE argument missing");
-
-
+        ("get", Some(get_command)) => {
+            let key = get_command.value_of("KEY").unwrap();
+            let val = kvs.get(key.to_owned())?;
+            match val {
+                Some(v) => println!("{}", v),
+                None => {
+                    println!("Key not found");
+                }
+            };
+            Ok(())
         }
-        Some(("get", _sub_m)) => {
-            eprintln!("unimplemented");
-            exit(1);
+        ("set", Some(set_command)) => {
+            let key = set_command.value_of("KEY").unwrap();
+            let val = set_command.value_of("VALUE").unwrap();
+            kvs.set(key.to_owned(), val.to_owned())?;
+            Ok(())
         }
-        Some(("remove", _sub_m)) => {
-            eprintln!("unimplemented");
-            exit(1);
+        ("rm", Some(rm_command)) => {
+            let key = rm_command.value_of("KEY").unwrap();
+            let res = kvs.remove(key.to_owned());
+            if res.is_err() {
+                println!("Key not found");
+                exit(1);
+            }
+            Ok(())
         }
-        _ => { } ,
+        _ => unreachable!(),
     }
 }
